@@ -19,20 +19,21 @@ This project focuses on performing **opinion mining** (also known as **sentiment
 - **Models**: Naive Bayes, Support Vector Machines (SVM), Logistic Regression
 - **IDE**: VSCode / Jupyter Notebook
 - **Optional Deployment**: Streamlit or Flask
-
---------------------------
+```markdown
 ## 📁 Project Structure
---------------------------
+
+```text
 opinion-mining/
-├── data/ # Raw and processed datasets
-├── models/ # Trained models (if saved)
-├── notebooks/ # Jupyter notebooks (optional)
-├── src/ # Source code (scripts and modules)
-├── outputs/ # Graphs and evaluation reports
+├── data/          # Raw and processed datasets
+├── models/        # Trained models (if saved)
+├── notebooks/     # Jupyter notebooks (optional)
+├── src/           # Source code (scripts and modules)
+├── outputs/       # Graphs and evaluation reports
 ├── .gitignore
 ├── README.md
 └── requirements.txt
----
+```  
+
 -------------------------------
 ## 🚀 How to Run the Project
 -------------------------------
