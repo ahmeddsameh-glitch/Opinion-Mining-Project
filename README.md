@@ -2,7 +2,6 @@
 
 This project focuses on performing **opinion mining** (also known as **sentiment analysis**) using Natural Language Processing (NLP) techniques. It analyzes text data (e.g., tweets, reviews, or comments) and classifies them as **Positive**, **Negative**, or **Neutral**.
 
----
 --------------------
 ## 📌 Project Goals
 --------------------
@@ -12,7 +11,6 @@ This project focuses on performing **opinion mining** (also known as **sentiment
 - Evaluate model performance
 - Optionally visualize results or deploy a simple web demo
 
----
 ---------------------
 ## 🛠️ Tech Stack
 ---------------------
@@ -22,7 +20,6 @@ This project focuses on performing **opinion mining** (also known as **sentiment
 - **IDE**: VSCode / Jupyter Notebook
 - **Optional Deployment**: Streamlit or Flask
 
----
 --------------------------
 ## 📁 Project Structure
 --------------------------
@@ -67,15 +64,15 @@ opinion-mining/
 ----------
 ✅ To-Do
 ----------
- Preprocess and clean text
+- Preprocess and clean text
 
- Build baseline sentiment model
+- Build baseline sentiment model
 
- Improve accuracy with advanced models (e.g., BERT)
+- Improve accuracy with advanced models (e.g., BERT)
 
- Add UI for prediction
+- Add UI for prediction
 
- Deploy with Streamlit or Flask
+- Deploy with Streamlit or Flask
  -------------
 📜 License
 --------------
