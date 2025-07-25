@@ -24,14 +24,16 @@ This project focuses on performing **opinion mining** (also known as **sentiment
 
 ```text
 opinion-mining/
-├── data/          # Raw and processed datasets
-├── models/        # Trained models (if saved)
-├── notebooks/     # Jupyter notebooks (optional)
-├── src/           # Source code (scripts and modules)
-├── outputs/       # Graphs and evaluation reports
+├── data/
+├── models/
+├── notebooks/
+├── src/
+├── outputs/
 ├── .gitignore
 ├── README.md
-└── requirements.txt
+├── requirements.txt
+└── Opinion_Mining.pdf 
+
 ```  
 
 -------------------------------
