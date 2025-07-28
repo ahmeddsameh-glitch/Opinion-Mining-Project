@@ -1,37 +1,16 @@
-import pandas as pd
-from nltk.tokenize import TreebankWordTokenizer
-from nltk.corpus import stopwords
-from nltk.stem import WordNetLemmatizer
-import string
+import re
+from nltk.tokenize import PunktSentenceTokenizer
 import nltk
 
-nltk.download('stopwords')
-nltk.download('wordnet')
-nltk.download('omw-1.4')
+nltk.download('punkt')
 
-# Load data
-df = pd.read_csv('/home/mca/Opinion-Mining-Project/data/battles.csv') 
-text_col = 'note'
-print(df.columns)
-print(df[text_col].dropna().head(10))
-
-tokenizer = TreebankWordTokenizer()
-stop_words = set(stopwords.words('english'))
-lemmatizer = WordNetLemmatizer()
-
-def preprocess_text(text):
-    if pd.isnull(text):
-        return ""
-    tokens = tokenizer.tokenize(text.lower())
-    tokens = [t for t in tokens if t not in string.punctuation]
-    tokens = [t for t in tokens if t not in stop_words]
-    tokens = [lemmatizer.lemmatize(t) for t in tokens]
-    return ' '.join(tokens)
-
-df['note_clean'] = df[text_col].apply(preprocess_text)
-print(df[['note', 'note_clean']].head(10))
-print("Original note (row 9):")
-print(df.loc[9, 'note'])
-print("\nCleaned note (row 9):")
-print(df.loc[9, 'note_clean'])
-
+def better_sentence_splitter(text):
+    # Fix glued punctuation by adding space after ., !, or ? if missing
+    text = re.sub(r'([.!?])(?=[A-Za-z])', r'\1 ', text)
+    # Initialize pretrained PunktSentenceTokenizer
+    tokenizer = PunktSentenceTokenizer()
+    sentences = tokenizer.tokenize(text)
+    return sentences
+text = " According to IMDb, the film has a rating of 7.8 out of 10.The lead actor previously starred in a hit sci-fi franchise.In my opinion, this is his best performance yet."
+text = better_sentence_splitter(text)
+print("the text is : ", text)
