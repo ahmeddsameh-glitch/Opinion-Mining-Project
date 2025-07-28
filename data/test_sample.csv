@@ -1,11 +1,11 @@
-,text,label
-0,I LOOOVE this product 😍😍!!! Highly recommended... #awesome,positive
-1,Worst. Experience. Ever. Will NEVER buy again!!! 🤮🤬,negative
-2,"meh... it was okay, I guess. kinda boring tho 🙄",neutral
-3,ABSOLUTELY AMAZING SERVICE!!! 😍💯 www.company.com,positive
-4,@brand You guys rock! Keep it up 👏🔥🔥🔥,positive
-5,"Totally disappointed. Delivery late, product broken. 😡",negative
-6,just okay. nothing special. 3/10 maybe 🤷‍♂️,neutral
-7,"Loved the color, but the fit was terrible :(",negative
-8,Refunded. Not worth the price!!! http://badshop.com,negative
-9,Thanks @brand for the quick support!!,positive
+,text,label,clean_text,no_stopwords,no_emoji,segmented,tokenized,lemmatized
+0,I LOOOVE this product 😍😍!!! Highly recommended... #awesome,positive,i looove this product 😍😍 highly recommended awesome,loooveproduct😍😍highlyrecommendedawesome,loooveproducthighlyrecommendedawesome,looove product highly recommended awesome,"['looove', 'product', 'highly', 'recommended', 'awesome']",looove product highly recommend awesome
+1,Worst. Experience. Ever. Will NEVER buy again!!! 🤮🤬,negative,worst experience ever will never buy again 🤮🤬,worstexperienceeverneverbuy🤮🤬,worstexperienceeverneverbuy,worst experience ever never buy,"['worst', 'experience', 'ever', 'never', 'buy']",bad experience ever never buy
+2,"meh... it was okay, I guess. kinda boring tho 🙄",neutral,meh it was okay i guess kinda boring tho 🙄,mehokayguesskindaboringtho🙄,mehokayguesskindaboringtho,meh okay guess kinda boring tho,"['meh', 'okay', 'guess', 'kinda', 'boring', 'tho']",meh okay guess kinda boring tho
+3,ABSOLUTELY AMAZING SERVICE!!! 😍💯 www.company.com,positive,absolutely amazing service 😍💯 wwwcompanycom,absolutelyamazingservice😍💯wwwcompanycom,absolutelyamazingservicewwwcompanycom,absolutely amazing service www company com,"['absolutely', 'amazing', 'service', 'www', 'company', 'com']",absolutely amazing service www company com
+4,@brand You guys rock! Keep it up 👏🔥🔥🔥,positive,brand you guys rock keep it up 👏🔥🔥🔥,brandguysrockkeep👏🔥🔥🔥,brandguysrockkeep,brand guys rock keep,"['brand', 'guys', 'rock', 'keep']",brand guy rock keep
+5,"Totally disappointed. Delivery late, product broken. 😡",negative,totally disappointed delivery late product broken 😡,totallydisappointeddeliverylateproductbroken😡,totallydisappointeddeliverylateproductbroken,totally disappointed delivery late product broken,"['totally', 'disappointed', 'delivery', 'late', 'product', 'broken']",totally disappointed delivery late product broken
+6,just okay. nothing special. 3/10 maybe 🤷‍♂️,neutral,just okay nothing special 310 maybe 🤷‍♂️,okaynothingspecial310maybe🤷‍♂️,okaynothingspecial310maybe,okay nothing special 310 may be,"['okay', 'nothing', 'special', '310', 'may', 'be']",okay nothing special 310 may be
+7,"Loved the color, but the fit was terrible :(",negative,loved the color but the fit was terrible ,lovedcolorfitterrible,lovedcolorfitterrible,loved color fit terrible,"['loved', 'color', 'fit', 'terrible']",love color fit terrible
+8,Refunded. Not worth the price!!! http://badshop.com,negative,refunded not worth the price httpbadshopcom,refundedworthpricehttpbadshopcom,refundedworthpricehttpbadshopcom,refunded worth price http bad shop com,"['refunded', 'worth', 'price', 'http', 'bad', 'shop', 'com']",refund worth price http bad shop com
+9,Thanks @brand for the quick support!!,positive,thanks brand for the quick support,thanksbrandquicksupport,thanksbrandquicksupport,thanks brand quick support,"['thanks', 'brand', 'quick', 'support']",thanks brand quick support
