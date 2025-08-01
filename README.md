@@ -18,7 +18,7 @@ This project focuses on performing **opinion mining** (also known as **sentiment
 - **Libraries**: NLTK, scikit-learn, pandas, matplotlib, seaborn
 - **Models**: Naive Bayes, Support Vector Machines (SVM), Logistic Regression
 - **IDE**: VSCode / Jupyter Notebook
-- **Optional Deployment**: Streamlit or Flask
+- **Optional Deployment**: React and Flask
 ```markdown
 ## 📁 Project Structure
 
