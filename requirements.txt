@@ -13,4 +13,6 @@ wordcloud
 plotly
 beautifulsoup4
 regex
+Flask
+flask-cors
 
