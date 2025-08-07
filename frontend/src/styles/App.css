@@ -40,3 +40,51 @@
 .read-the-docs {
   color: #888;
 }
+/* Container holds everything */
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* MAIN POST (custom post) style */
+.main-post {
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  padding: 1.5rem 2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.main-post .fb-post-header {
+  margin-bottom: 1rem;
+}
+
+.main-post .avatar.custom {
+  width: 50px;
+  height: 50px;
+  font-size: 1.5rem;
+}
+
+.main-post .username {
+  font-weight: 700;
+  font-size: 1.25rem;
+  color: #222;
+}
+
+.main-post .post-text {
+  font-size: 1.25rem;
+  line-height: 1.5;
+  color: #111;
+  margin-bottom: 1rem;
+}
+
+.main-post .post-image-container img {
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+}
+.fb-post button:hover {
+  color: #145dbf;
+}

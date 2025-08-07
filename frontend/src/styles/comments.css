@@ -1,0 +1,115 @@
+.comment-post {
+  background-color: #f0f2f5;
+  border-radius: 10px;
+  padding: 1rem 1.2rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-left: 2rem; /* indent comments */
+  box-shadow: inset 0 0 5px #ccc;
+}
+
+.comment-post .fb-post-header {
+  margin-bottom: 0.6rem;
+}
+
+.comment-post .avatar.comment {
+  width: 35px;
+  height: 35px;
+  font-size: 1rem;
+}
+
+.comment-post .sentiment-label {
+  font-weight: 600;
+  font-size: 0.9rem;
+}
+
+/* Replies nested under comments (the replies to comments) */
+.comments-container {
+  margin-top: 1rem;
+  margin-left: 2rem; /* indent replies further */
+  padding-left: 1rem;
+  border-left: 3px solid #1877f2;
+  background-color: #e8f0fe;
+  border-radius: 8px;
+}
+
+.comments-container strong {
+  color: #1877f2;
+  margin-bottom: 0.5rem;
+  display: block;
+  font-size: 0.9rem;
+}
+
+.comments-container ul {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  max-height: 120px;
+  overflow-y: auto;
+}
+
+.comments-container ul li {
+  background: white;
+  margin-bottom: 0.5rem;
+  padding: 0.35rem 0.8rem;
+  border-radius: 12px;
+  box-shadow: 0 1px 3px rgb(0 0 0 / 0.1);
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Reply textarea */
+.reply-textarea {
+  width: 100%;
+  min-height: 50px;
+  max-height: 100px;
+  padding: 0.5rem;
+  resize: vertical;
+  border: 1.5px solid #ccd0d5;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: border-color 0.2s ease;
+  margin-top: 0.8rem;
+}
+
+.reply-textarea:focus {
+  outline: none;
+  border-color: #1877f2;
+  box-shadow: 0 0 5px rgba(24, 119, 242, 0.5);
+}
+
+/* Submit button */
+.reply-submit-btn {
+  background-color: #1877f2;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 0.4rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 0.4rem;
+}
+
+.reply-submit-btn:hover {
+  background-color: #145dbf;
+}
+
+/* Like button styling */
+.like-button {
+  border: none;
+  background: none;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1rem;
+  user-select: none;
+  color: #606770;
+  margin-top: 0.6rem;
+}
+
+.like-button.liked {
+  color: #1877f2;
+}
