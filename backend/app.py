@@ -7,7 +7,7 @@ CORS(app)
 @app.route('/comments')
 def get_comments():
     # Read CSV with pandas
-    df = pd.read_csv('/home/ahmed-sameh/Opinion-Mining-Project/data/test_sample.csv', encoding='utf-8')
+    df = pd.read_csv('/home/mca/Opinion-Mining-Project/data/test_sample.csv', encoding='utf-8')
 
     # Convert 'tokenized' column from string to list safely
     if 'tokenized' in df.columns:

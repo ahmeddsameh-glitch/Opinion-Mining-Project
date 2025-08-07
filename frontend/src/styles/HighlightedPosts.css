@@ -1,0 +1,122 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.fb-post {
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  padding: 1rem 1.5rem;
+  max-width: 600px;
+  margin: 0 auto;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.fb-post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 700;
+  font-size: 1.2rem;
+  margin-right: 0.75rem;
+  user-select: none;
+}
+
+.avatar.custom {
+  background-color: #555;
+}
+
+.avatar.comment {
+  background-color: #bbb;
+}
+
+.username {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #333;
+}
+
+.sentiment-label {
+  font-weight: 700;
+  font-size: 1rem;
+}
+
+.sentiment-positive {
+  color: #237804;
+}
+
+.sentiment-negative {
+  color: #a8071a;
+}
+
+.sentiment-neutral {
+  color: #595959;
+}
+
+.post-text {
+  font-size: 1.125rem;
+  color: #111;
+  margin-bottom: 1rem;
+  line-height: 1.4;
+  white-space: pre-wrap;
+}
+
+.tokens {
+  font-size: 0.85rem;
+  color: #555;
+  font-family: monospace;
+  overflow-x: auto;
+  white-space: nowrap;
+  margin-bottom: 1rem;
+}
+
+.post-image-container {
+  max-width: 100%;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.post-image-container img {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.like-button {
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+  font-size: 1rem;
+  user-select: none;
+  color: #606770;
+}
+
+.like-button.liked {
+  color: #1877f2;
+}
+/* Big container that wraps all posts + comments */
+.big-container {
+  max-width: 720px;          /* max width for content */
+  margin: 2rem auto;         /* center horizontally with vertical spacing */
+  padding: 2rem;             /* padding inside container */
+  background-color: #fff;    /* white background */
+  border-radius: 16px;       /* rounded corners */
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12); /* subtle shadow */
+  border: 1px solid #ddd;   /* subtle border */
+  box-sizing: border-box;
+}
