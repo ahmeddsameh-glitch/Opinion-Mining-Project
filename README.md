@@ -159,5 +159,4 @@ Let me know if you also want:
 
 - `requirements.txt`
 - `.gitignore`
-- Starter Python files (`train_model.py`, etc.)  
-  I'll generate them for you.
+- Starter Python files
