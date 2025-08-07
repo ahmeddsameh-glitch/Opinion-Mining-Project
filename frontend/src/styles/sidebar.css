@@ -1,0 +1,29 @@
+.sidebar {
+  width: 260px;
+  padding: 1.5rem;
+  border-left: 1px solid #e0e0e0;
+  background-color: #fafafa;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.sidebar h2 {
+  font-size: 1.25rem;
+  margin-bottom: 1rem;
+  color: #333;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 0.5rem;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  margin-bottom: 0.75rem;
+  padding: 0.5rem 0;
+  border-bottom: 1px solid #eee;
+  font-size: 0.95rem;
+  color: #444;
+}
