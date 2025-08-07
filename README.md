@@ -137,7 +137,7 @@ Opinion-Mining-Project/
    npm install # Install dependencies
    npm run dev # Run React server
    ```
-   📊 Sample Results
+## 📊 Sample Results
 
 ---
 
