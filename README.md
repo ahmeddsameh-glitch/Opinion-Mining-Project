@@ -138,7 +138,6 @@ Opinion-Mining-Project/
    npm run dev # Run React server
    ```
    📊 Sample Results
-   ```
 
 ---
 
