@@ -1,90 +1,117 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
+body,
+html {
+  height: 100%;
+  margin: 0;
+  background-color: #E9E3DF;
+  font-family: 'Poppins', sans-serif;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
-/* Container holds everything */
 .container {
   display: flex;
-  flex-direction: column;
-  gap: 1.5rem;
-  max-width: 700px;
-  margin: 0 auto;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
 }
 
-/* MAIN POST (custom post) style */
-.main-post {
-  background-color: white;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
-  padding: 1.5rem 2rem;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+.main-content {
+  padding: 40px;
+  background-color: #FF7A30; /* main container */
+  width: 950px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(87, 86, 79, 0.5);
+  border-radius: 15px;
 }
 
-.main-post .fb-post-header {
-  margin-bottom: 1rem;
-}
-
-.main-post .avatar.custom {
-  width: 50px;
-  height: 50px;
-  font-size: 1.5rem;
-}
-
-.main-post .username {
+.main-content h1 {
+  color: #000000;
+  font-size: 32px;
   font-weight: 700;
-  font-size: 1.25rem;
-  color: #222;
+  margin-bottom: 50px;
 }
 
-.main-post .post-text {
-  font-size: 1.25rem;
-  line-height: 1.5;
-  color: #111;
-  margin-bottom: 1rem;
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
 }
 
-.main-post .post-image-container img {
+.grid-item {
+  padding: 30px;
+  text-align: center;
+  border-radius: 15px;
+  color: #465C88;
+  background-color: #E9E3DF;
+  box-shadow: 0 6px 20px rgba(87, 86, 79, 0.3);
+  border-right: 1px solid #465C88;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+/* Remove border from last column */
+.grid-item:last-child {
+  border-right: none;
+}
+
+/* Hover effect */
+.grid-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(87, 86, 79, 0.5);
+}
+
+.avatar {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+  border: 2px solid #465C88;
+}
+.stars {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  margin-bottom: 15px;
+}
+
+.star {
+  width: 22px;
+  height: 22px;
+}
+
+.grid-item h3 {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+  .main-content {
+    width: 95%;
+  }
+  .avatar {
+    width: 90px;
+    height: 90px;
+  }
+  .stars {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr;
+  }
+  .grid-item {
+    border-right: none;
+  }
+}
+.product-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover;
+  margin-bottom: 20px;
   border-radius: 12px;
-  box-shadow: 0 4px 10px rgba(0,0,0,0.15);
-}
-.fb-post button:hover {
-  color: #145dbf;
+  border: 3px solid #FF7A30; 
+  box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
