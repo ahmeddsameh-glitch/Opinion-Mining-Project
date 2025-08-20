@@ -115,3 +115,6 @@ html {
   border: 3px solid #FF7A30; 
   box-shadow: 0 4px 15px rgba(0,0,0,0.3);
 }
+.main-content h3{
+  color :black;
+}

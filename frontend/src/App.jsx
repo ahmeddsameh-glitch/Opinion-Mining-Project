@@ -6,19 +6,19 @@ const reviews = [
   {
     name: 'Floyd Miles',
     rating: 1,
-    comment: 'so bad.',
+    comment: 'Absolutely terrible. Never ordering again.',
     avatar: 'https://randomuser.me/api/portraits/men/32.jpg',
   },
   {
     name: 'Ronald Richards',
-    rating: 5,
-    comment: 'the best thing i ever had in my life.',
+    rating: 3,
+    comment: 'It was fine. Not great, not awful.',
     avatar: 'https://randomuser.me/api/portraits/men/45.jpg',
   },
   {
-    name: 'Savannah Nguyen',
-    rating: 3.5,
-    comment: 'not good not bad , neutral.',
+    name: 'Elena Max',
+    rating: 5,
+    comment: 'the best thing i ever had in my life.',
     avatar: 'https://randomuser.me/api/portraits/women/65.jpg',
   },
 ];
