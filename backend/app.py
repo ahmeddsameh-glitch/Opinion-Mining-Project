@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import pandas as pd
 from trainedmodel import load_trained_models
-from predict_utils import predict_and_save_sentiments   # ⬅️ new import
+from predict_save import predict_and_save_sentiments   # ⬅️ new import
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
@@ -25,14 +25,13 @@ def receive_reviews():
         reviews = data['reviews']
         print("📥 Received reviews:", reviews)
 
-        # Ensure reviews is list of strings
-        if isinstance(reviews, dict):
-            reviews = list(reviews.values())
+        # Extract only the comment texts for prediction
+        comments = [r["comment"] for r in reviews if "comment" in r]
 
         # Run predictions
         results = predict_and_save_sentiments(
             logistic_model, vectorizer, label_encoder,
-            reviews, "test_sample.csv"
+            comments, "test_sample.csv"
         )
 
         return jsonify({

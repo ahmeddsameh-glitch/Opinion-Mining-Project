@@ -16,17 +16,17 @@ html {
 
 .main-content {
   padding: 40px;
-  background-color: #FF7A30; /* main container */
+  background-color: blanchedalmond; /* main container */
   width: 950px;
   text-align: center;
   box-shadow: 0 8px 25px rgba(87, 86, 79, 0.5);
   border-radius: 15px;
 }
 
-.main-content h1 {
+.main-content p {
   color: #000000;
-  font-size: 32px;
-  font-weight: 700;
+  font-size: 15px;
+  font-weight: 350;
   margin-bottom: 50px;
 }
 
