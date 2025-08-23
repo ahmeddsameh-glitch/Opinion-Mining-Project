@@ -1,18 +1,17 @@
 from flask import Flask, request, jsonify
 from flask_cors import CORS
 import pandas as pd
-from trainedmodel import load_trained_models
-from predict_save import predict_and_save_sentiments   # ⬅️ new import
+from svmtrainedmodel import loadSVM  
+from svmpredict import predict_svm         
 
 app = Flask(__name__)
 CORS(app, resources={r"/*": {"origins": "http://localhost:5173"}})
 
-# ---- Load trained models once at startup ----
-models = load_trained_models()
-logistic_model = models['logistic_model']
-vectorizer = models['tfidf_vectorizer']
-label_encoder = models['label_encoder']
-print("✅ Models loaded successfully at startup!")
+# ---- Load trained SVM model + vectorizer at startup ----
+models = loadSVM()
+svm_model = models["svm_model"]
+vectorizer = models["svm_vectorizer"]
+print("✅ SVM model + vectorizer loaded successfully at startup!")
 
 # ---- API route ----
 @app.route('/api/reviews', methods=['POST'])
@@ -28,11 +27,8 @@ def receive_reviews():
         # Extract only the comment texts for prediction
         comments = [r["comment"] for r in reviews if "comment" in r]
 
-        # Run predictions
-        results = predict_and_save_sentiments(
-            logistic_model, vectorizer, label_encoder,
-            comments, "test_sample.csv"
-        )
+        # Run predictions with SVM
+        results = predict_svm(models , comments)
 
         return jsonify({
             "message": "Reviews processed successfully",
