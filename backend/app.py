@@ -29,7 +29,7 @@ def receive_reviews():
 
         # Run predictions with SVM
         results = predict_svm(models , comments)
-
+        print("results",results)
         return jsonify({
             "message": "Reviews processed successfully",
             "results": results
